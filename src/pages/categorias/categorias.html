@@ -1,0 +1,31 @@
+<!--
+  Generated template for the CategoriasPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Categorias</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+    <h1 padding-horizontal>Região: {{regiao}}</h1>
+
+
+
+    <ion-card *ngFor="let categoria of lista_categorias">
+        <ion-card-header>
+            <i>#{{categoria.idCategoria}}</i> {{categoria.nome}}
+        </ion-card-header>
+        <ion-card-content>
+            <p>{{categoria.descricaoCurta}}</p>
+        </ion-card-content>
+    </ion-card>
+
+</ion-content>

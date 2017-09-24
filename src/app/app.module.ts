@@ -8,6 +8,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { FeedPageModule } from '../pages/feed/feed.module';
 import { IntroPageModule } from '../pages/intro/intro.module';
+import { CategoriasPageModule } from '../pages/categorias/categorias.module';
 import { TabsPage } from '../pages/tabs/tabs';
 import { HttpModule } from '@angular/http';
 
@@ -30,6 +31,7 @@ import { CategoriasProvider } from '../providers/categorias/categorias';
     IonicModule.forRoot(MyApp),
     FeedPageModule,
     IntroPageModule, 
+    CategoriasPageModule,
     HttpModule
   ],
   bootstrap: [IonicApp],
