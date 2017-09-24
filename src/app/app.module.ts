@@ -14,6 +14,8 @@ import { HttpModule } from '@angular/http';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { MoovieProvider } from '../providers/moovie/moovie';
+import { FeedPage } from "../pages/feed/feed";
+import { CategoriasProvider } from '../providers/categorias/categorias';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,8 @@ import { MoovieProvider } from '../providers/moovie/moovie';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    MoovieProvider
+    CategoriasProvider,
+    //MoovieProvider
   ]
 })
 export class AppModule {}
